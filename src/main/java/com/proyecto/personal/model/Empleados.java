@@ -8,27 +8,27 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="empleados")
+@Table(name = "empleados")
 public class Empleados {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idempleado;
-	
-	@Column(name="Nombre")
+
+	@Column(name = "Nombre")
 	private String Nombre;
-	
-	@Column(name="Apepaterno")
+
+	@Column(name = "Apepaterno")
 	private String Apepaterno;
-	
-	@Column(name="Apematerno")
+
+	@Column(name = "Apematerno")
 	private String Apematerno;
-	
-	@Column(name="estatus")
+
+	@Column(name = "estatus")
 	private int estatus;
-	
+
 	public Empleados() {
-		
+
 	}
 
 	public Empleados(int idempleado, String nombre, String apepaterno, String apematerno, int estatus) {
@@ -79,8 +79,5 @@ public class Empleados {
 	public void setEstatus(int estatus) {
 		this.estatus = estatus;
 	}
-	
-	
-	 
 
 }
