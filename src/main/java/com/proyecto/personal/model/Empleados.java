@@ -13,7 +13,7 @@ public class Empleados {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idempleado;
+	private Long idempleado;
 
 	@Column(name = "Nombre")
 	private String Nombre;
@@ -31,7 +31,7 @@ public class Empleados {
 
 	}
 
-	public Empleados(int idempleado, String nombre, String apepaterno, String apematerno, int estatus) {
+	public Empleados(Long idempleado, String nombre, String apepaterno, String apematerno, int estatus) {
 		super();
 		this.idempleado = idempleado;
 		Nombre = nombre;
@@ -40,11 +40,11 @@ public class Empleados {
 		this.estatus = estatus;
 	}
 
-	public int getIdempleado() {
+	public Long getIdempleado() {
 		return idempleado;
 	}
 
-	public void setIdempleado(int idempleado) {
+	public void setIdempleado(Long idempleado) {
 		this.idempleado = idempleado;
 	}
 
